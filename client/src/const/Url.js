@@ -1,6 +1,6 @@
-//const base = '';
+// const base = '';
 
- const base = 'http://localhost:9001/' // Enable it for Development
+const base = 'http://localhost:9001/' // Enable it for Development
 
 const urlConst = {
     register: base + 'add-user',
@@ -44,7 +44,7 @@ const urlConst = {
 
     // comments
     get_all_comments: base + 'api/comments/post/{postId}',
-    get_comment_by_id: base  + 'api/comments/post/{postId}/{commentId}',
+    get_comment_by_id: base + 'api/comments/post/{postId}/{commentId}',
 
     // post comments
     post_comments: base + 'api/post/{postId}/comments/user/{userId}',
@@ -66,12 +66,12 @@ const urlConst = {
     delete_answers: base + 'answer-question/answer/{answerId}',
 
     // Rating
-    
+
     post_rating: base + 'api/pratings/post/{postId}/user/{userId}',
 
     // Comment Rating
     post_comment_rating: base + 'api/cratings/comments/{commentsId}/user/{userId}',
-    
+
     // Question  Rating
     post_question_rating: base + 'api/qratings/questions/{questionId}/user/{userId}',
 
